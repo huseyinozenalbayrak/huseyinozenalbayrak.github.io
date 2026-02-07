@@ -1,31 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Truth or Dare: Ultimate Fun</title>
+    <title>Hüseyin Özen Albayrak - Apps</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        body { font-family: -apple-system, sans-serif; text-align: center; padding: 50px 20px; background-color: #f4f4f7; }
-        /* Logo için stil: Yuvarlak köşeler ve maksimum genişlik */
+        body { font-family: -apple-system, sans-serif; text-align: center; padding: 50px 20px; background-color: #f4f4f7; color: #333; }
+        
+        /* Her uygulama için ayrı bölüm stili */
+        .app-section { margin-bottom: 60px; padding-bottom: 50px; border-bottom: 1px solid #e1e1e1; max-width: 600px; margin-left: auto; margin-right: auto; }
+        .app-section:last-of-type { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+
         .app-logo { max-width: 150px; border-radius: 22%; margin-bottom: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-        h1 { color: #333; margin-bottom: 10px; font-size: 2em; }
+        
+        h1 { margin-bottom: 10px; font-size: 1.8em; color: #000; }
         p { color: #666; font-size: 1.1em; line-height: 1.5; }
-        .btn { display: inline-block; background: #007aff; color: white; padding: 12px 24px; text-decoration: none; border-radius: 8px; margin-top: 30px; font-weight: bold; font-size: 1.1em; }
-        .footer { margin-top: 60px; font-size: 0.9em; color: #999; }
+        
+        .btn { display: inline-block; background: #007aff; color: white; padding: 12px 24px; text-decoration: none; border-radius: 8px; margin-top: 20px; font-weight: bold; font-size: 1em; }
+        .btn.disabled { background: #b0b0b5; cursor: default; pointer-events: none; } /* Pasif buton stili */
+        
+        .footer { margin-top: 60px; font-size: 0.9em; color: #999; border-top: 1px solid #e1e1e1; padding-top: 30px; }
         a { color: #007aff; text-decoration: none; }
+        .policy-link { display: block; margin-top: 15px; font-size: 0.9em; }
     </style>
 </head>
 <body>
-    <img src="logo.png" alt="Truth or Dare Logo" class="app-logo">
 
-    <h1>Truth or Dare: Ultimate Fun</h1>
-    <p>Download now for the ultimate party game experience! <br>Fun questions, daring challenges.</p>
-    
-    <a href="https://apps.apple.com/app/id6757914032" class="btn">Download on the App Store</a>
-    
+    <!-- App 1: Truth or Dare -->
+    <div class="app-section">
+        <img src="logo.png" alt="Truth or Dare Logo" class="app-logo">
+        <h1>Truth or Dare: Ultimate Fun</h1>
+        <p>Download now for the ultimate party game experience! <br>Fun questions, daring challenges.</p>
+        
+        <a href="https://apps.apple.com/app/id6757914032" class="btn">Download on the App Store</a>
+        <small class="policy-link"><a href="privacy.html">Privacy Policy</a></small>
+    </div>
+
+    <!-- App 2: F It -->
+    <div class="app-section">
+        <img src="logo-f_it.png" alt="F It Logo" class="app-logo">
+        <h1>F It - Anti Motivation</h1>
+        <p>Stop caring, start living. <br>Daily reality checks to help you stop overthinking.</p>
+        
+        <!-- Henüz link olmadığı için pasif buton -->
+        <a href="#" class="btn disabled">Coming Soon to App Store</a>
+        <small class="policy-link"><a href="privacy-fit.html">Privacy Policy</a></small>
+    </div>
+
     <div class="footer">
         <p>For questions and support: <br> <strong>albayrakhuseyinozen@gmail.com</strong></p>
-        <br>
-        <small><a href="privacy.html">Privacy Policy</a></small>
     </div>
+
 </body>
 </html>
